@@ -14,16 +14,16 @@
 
   <!-- HOME -->
   <section id="homePage">
-    <div class="mainContainer">
-      <div class="leftPane">
+    <div class="main-container">
+      <div class="left-pane">
         <nav>
           <ul class="navMenu">
-            <li>O mnie</li>
-            <li>Warsztat</li>
-            <li>Kontakt</li>
+            <li><a href="#about-me">O mnie</a></li>
+            <li><a href="#workshop">Warsztat</a></li>
+            <li><a href="#contact">Kontakt</a></li>
           </ul>
         </nav>
-        <div class="socialLinks">
+        <div class="social-links">
           <ul>
             <li>EN,</li>
             <li>FB,</li>
@@ -31,7 +31,7 @@
           </ul>
         </div>
       </div>
-      <div class="rightPane">
+      <div class="right-pane">
         <header>
           <h1 class="header">
             <span>Park</span>
@@ -45,8 +45,8 @@
   </section>
 
   <!-- ABOUT ME -->
-  <section id="aboutMe">
-    <div class="leftPane">
+  <section id="about-me">
+    <div class="left-pane">
       <article>
         Jestem doświadczonym, kreatywnym i nieszablonowym lutnikiem. 
         Według mnie każda gitara to generator hitów, pomysłów, magii, 
@@ -66,7 +66,7 @@
         Patryk Pater
         </article>
     </div>
-    <div class="rightPane">
+    <div class="right-pane">
       <h2>O <br>mnie</h2>
     </div>
   </section>
@@ -74,17 +74,19 @@
   
   <!-- WORKSHOP -->
   <section id="workshop">
-    <div class="leftPane">
-      <h2>Warsztat</h2>
+    <div class="left-pane">
+        <h2 class="sticky">Warsztat</h2>
     </div>
-    <div class="rightPane">
+    <div class="right-pane">
       <div class="table">
         <div class="row expandalbe">
           <div class="title">Pełna regulacja - 150zł (190zł floyd rose)</div>
-          <div class="expandButton">+</div>
-          <div class="info">
-            diagnostyka, czyszczenie i konserwacja podstrunnicy, polerowanie progó, wymiana stru, ustawienie krzywizny gryf, ustawienie akcji stru, 
-            ewentualna korekcja siodełk, ustawienie menzury (intonacja, wyrównanie poziomu sygnału przetwornikó, czyszczenie instrumentu
+          <div class="expandButton material-icons">add</div>
+          <div class="info accordion">
+            <p>
+              diagnostyka, czyszczenie i konserwacja podstrunnicy, polerowanie progó, wymiana stru, ustawienie krzywizny gryf, ustawienie akcji stru, 
+              ewentualna korekcja siodełk, ustawienie menzury (intonacja, wyrównanie poziomu sygnału przetwornikó, czyszczenie instrumentu
+            </p>
           </div>
         </div>
         <div class="row"><div class="title">przegląd, naprawa oraz modyfikacja elektroniki</div></div>
@@ -109,7 +111,7 @@
 
  <!-- CONTACT -->
   <section id="contact">
-    <div class="leftPane">
+    <div class="left-pane">
       <div class="table">
         <div class="row">
           <div class="title">Telefon</div>
@@ -121,31 +123,33 @@
         </div>
         <div class="row">
           <div class="title">Adres przyjmowania gitar</div>
-          <div class="info"><a target="_blank" href="https://www.google.pl/maps/place/Nowa+Nuta+-+sklep+muzyczny+z+instrumentami/@50.0473844,19.9519602,17z/data=!3m1!4b1!4m5!3m4!1s0x471645118669bff1:0x6005e3b785dc698a!8m2!3d50.0474472!4d19.9540031?hl=pl">Sklep muzyczny Nowa Nuta, ul. Solna 1, Kraków</a></div>
+          <div class="info">
+            <a target="_blank" href="https://www.google.pl/maps/place/Nowa+Nuta+-+sklep+muzyczny+z+instrumentami/@50.0473844,19.9519602,17z/data=!3m1!4b1!4m5!3m4!1s0x471645118669bff1:0x6005e3b785dc698a!8m2!3d50.0474472!4d19.9540031?hl=pl">
+              Sklep muzyczny Nowa Nuta<br>ul. Solna 1, Kraków
+            </a>
+          </div>
         </div>
         <div class="row">
           <div class="title">Facebook</div>
           <div class="info">
-            <i class="material-icons" style="font-size:48px;">north_east</i>
+            <i class="material-icons">north_east</i>
           </div>
         </div>
         <div class="row">
           <div class="title">Instagram</div>
           <div class="info">
-            <i class="material-icons" style="font-size:48px;">north_east</i>
-          </div>
-        </div>
-        <div class="row">
-          <div class="title">
-            <p>©<span id="currentYear"></span>, Parker Pyatt.</p>
+            <i class="material-icons">north_east</i>
           </div>
         </div>
       </div>
     </div>
-    <div class="righttPane">
+    <div class="right-pane">
       <h2>Kontakt</h2>
     </div>
   </section>
+  <footer class="footer">
+    <p>©<span id="currentYear"></span>, Parker Pyatt.</p>
+  </footer>
 
 </body>
 </html>
