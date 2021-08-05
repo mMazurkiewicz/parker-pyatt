@@ -6,6 +6,7 @@
   --OneBitPink: #ebb5b5;
   --OneBitAqua: #b5ebe9;
   --Border: #bfbfbf;
+  --BorderContact: #98c3c2;
 }
 
 @font-face {
@@ -20,6 +21,7 @@ html, body {
   font-family: 'SansSerif-BlbFLF', Arial, sans-serif;
   color: var(--FontDark);
   background-color: var(--Primary);
+  font-size: 18px;
 }
 
 a {
@@ -32,6 +34,7 @@ a {
 .material-icons {
   font-size: 32px;
   vertical-align: top;
+  cursor: pointer;
 }
 
 /* HIDE SCROLLBAR */
@@ -52,6 +55,55 @@ ul {
 
 .left-pane, .right-pane {
   width: 50%;
+}
+
+/* ANIMATE HOVER */
+.animate-nav {
+  position: relative;
+  cursor: pointer;
+}
+
+.animate-nav::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 5px;
+  background-color: var(--FontDark);
+  transition: width 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .animate-nav:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+.animate-link {
+  position: relative;
+  cursor: pointer;
+}
+
+.animate-link::before{
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--FontDark);
+  transition: width 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .animate-link:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
 }
 
 /* HOME PAGE */
@@ -81,7 +133,7 @@ ul {
 
 /* HEADER */
 .header {
-  font-size: 14vw;
+  font-size: 13vw;
   word-wrap: break-word;
   margin: 0;
   text-transform : uppercase;
@@ -123,30 +175,6 @@ ul {
   padding: 50px 10px 10px 50px;
 }
 
-.navMenu li a {
-  position: relative;
-  cursor: pointer;
-}
-
-.navMenu li a::before{
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 5px;
-  background-color: var(--FontDark);
-  transition: width 0.2s cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .navMenu li a:hover::before{
-    left: 0;
-    right: auto;
-    width: 100%;
-  }
-}
-
 /* SOCIAL LINKS */
 .social-links {
   position: relative;
@@ -179,6 +207,14 @@ ul {
   color: var(--Primary);
   background-color: none;
   padding-right: 10px;
+}
+
+.social-links ul li {
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+.social-links ul li:hover {
+  opacity: 0.7;
 }
 
 /* ABOUT ME */
@@ -282,6 +318,10 @@ div.expandalbe div.accordion p {
 
 #contact div.info {
   text-align: right;
+}
+
+#contact .table div.row {
+  border-color: var(--BorderContact);
 }
 
 /* FOOTER */
