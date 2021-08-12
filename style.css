@@ -125,6 +125,7 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  min-height: 100vh;
 }
 
 .main-container .left-pane {
@@ -184,11 +185,15 @@ ul {
 }
 
 @media only screen 
-  and (max-device-width : 1024px) 
+  and (max-device-width : 360px) 
   and (orientation : portrait) {    
-    #homePage .right-pane {
-      justify-content: flex-end;
-      align-items: stretch;
+    #body #homePage .left-pane {
+      flex-direction: column;
+      justify-content: end;
+    }
+    
+    #body #homePage .left-pane .social-links {
+      align-self: flex-end;
     }
 }
 
@@ -303,7 +308,7 @@ nav {
 }
 
 #about-me h2 {
-  font-size: 14vw;
+  font-size: 12vw;
   margin: 0;
   align-self: flex-start;
 }
@@ -311,6 +316,15 @@ nav {
 #about-me .left-pane, #about-me .right-pane {
   min-height: 90vh;
   padding: 50px;
+}
+
+@media only screen 
+  and (max-device-width : 410px) 
+  and (orientation : portrait) {
+    #about-me .left-pane, #about-me .right-pane {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
 }
 
 #about-me .left-pane  {
@@ -352,8 +366,17 @@ nav {
   padding: 50px;
 }
 
+@media only screen 
+  and (max-device-width : 410px) 
+  and (orientation : portrait) {
+    #workshop .left-pane, #workshop .right-pane {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+}
+
 #workshop h2 {
-  font-size: 14vw;
+  font-size: 12vw;
   width: 100%;
   word-wrap: break-word;
   margin: 0;
@@ -414,7 +437,7 @@ div.expandalbe div.accordion p {
 #contact {
   display: flex;
   flex-direction: row-reverse;
-  min-height: 80vh;
+  min-height: 100vh;
   justify-content: space-between;
   background-color: var(--OneBitAqua);
 }
@@ -429,8 +452,17 @@ div.expandalbe div.accordion p {
   padding: 50px;
 }
 
+@media only screen 
+  and (max-device-width : 410px) 
+  and (orientation : portrait) {
+    #contact .left-pane, #contact .right-pane {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+}
+
 #contact h2 {
-  font-size: 14vw;
+  font-size: 12vw;
   width: 100%;
   word-wrap: break-word;
   margin: 0;

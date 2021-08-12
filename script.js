@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     if (accordion.style.maxHeight) {
       accordion.style.maxHeight = null;
     } else {
-      accordion.style.maxHeight = '197px';
+      accordion.style.maxHeight = accordion.scrollHeight + "px";;
     }
   })
 })
