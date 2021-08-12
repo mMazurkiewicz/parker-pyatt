@@ -19,7 +19,15 @@ html, body {
   font-family: 'SansSerif-BlbFLF', Arial, sans-serif;
   color: var(--FontDark);
   background-color: var(--Primary);
-  font-size: 18px;
+  font-size: 24px;
+}
+
+@media only screen 
+  and (max-device-width : 540px) 
+  and (orientation : portrait) {
+    html, body {
+      font-size: 18px;
+    }
 }
 
 a {
@@ -62,7 +70,7 @@ ul {
   position: absolute;
   background-color: var(--FontDark);
   top: 0;
-  right: 350px;
+  right: 800px;
   bottom: 0;
   transform: skew(-10deg);
   width: 150%;
@@ -208,7 +216,7 @@ nav {
 }
 
 .navMenu {
-  font-size: 48px;
+  font-size: 5vw;
   font-weight: 800;
   text-transform : uppercase;
 }
@@ -224,7 +232,7 @@ nav {
 /* SOCIAL LINKS */
 .social-links {
   position: relative;
-  font-size: 36px;
+  font-size: 3vw;
   font-weight: 800;
   padding: 0 10px 50px 50px;
 }
@@ -443,6 +451,10 @@ div.expandalbe div.accordion p {
 
 #contact .info:hover i {
   transform: rotate(45deg);
+}
+
+#contact .row .title {
+  max-width: 40%;
 }
 
 @media only screen 
