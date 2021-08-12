@@ -212,6 +212,10 @@ ul {
       max-height: 100%;
       max-width: 100%;
     }
+    #homePage .right-pane {
+      align-items: unset;
+      justify-content: flex-end;
+    }
 }
 
 /* NAVBAR */
@@ -494,7 +498,7 @@ div.expandalbe div.accordion p {
   and (orientation : portrait) {
     #contact.main-container {
       flex-direction: column-reverse;
-      justify-content: space-between;
+      justify-content: space-evenly;
     }
     #body #contact.main-container .left-pane {
       flex-direction: column;
