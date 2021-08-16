@@ -10,17 +10,26 @@
 
 @font-face {
   font-family: "SansSerif-BlbFLF";
-  src: url("./assets/sansserifexbflfcond-webfont.woff2") format("woff"),
+  src: url("/assets/sansserifbldflf-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "CenturyGothic";
+  src: url("/assets/CenturyGothic-Bold.woff2") format("woff2");
 }
 /* gothicbo.ttf - opisy */
 
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'SansSerif-BlbFLF', Arial, Helvetica, sans-serif;
+  font-family: 'CenturyGothic', Arial, Helvetica, sans-serif;
   color: var(--FontDark);
   background-color: var(--Primary);
   font-size: 24px;
+}
+
+.bold-font {
+  font-family: 'SansSerif-BlbFLF', Arial, Helvetica, sans-serif;
 }
 
 @media only screen 
@@ -193,6 +202,14 @@ ul {
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
+}
+
+@media only screen 
+  and (max-device-width : 1024px) 
+  and (orientation : portrait) {
+    #homePage {
+      height: 100%;
+    }
 }
 
 @media only screen 
