@@ -2,6 +2,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
   const dt = new Date();
   document.getElementById("currentYear").innerHTML = dt.getFullYear();
 
+  document.getElementsByTagName("body")[0].style.opacity = 1;
+
   const row = document.getElementsByClassName("expandalbe")[0];
   const accordion = document.getElementsByClassName("accordion")[0];
   const expandButton = document.getElementsByClassName("expandButton")[0];
