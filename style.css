@@ -256,7 +256,6 @@ nav {
 
 .navMenu {
   font-size: 5vw;
-  font-weight: 800;
   text-transform : uppercase;
 }
 
@@ -272,7 +271,6 @@ nav {
 .social-links {
   position: relative;
   font-size: 3vw;
-  font-weight: 800;
   padding: 0 10px 50px 50px;
 }
 
