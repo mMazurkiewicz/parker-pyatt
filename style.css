@@ -34,7 +34,7 @@ body {
 
 .bold-font {
   font-family: 'SansSerif-BlbFLF', Arial, Helvetica, sans-serif;
-  font-weight: 100;
+  font-weight: 100 !important; 
 }
 
 @media only screen 
@@ -52,6 +52,7 @@ a {
 
 h2 {
   text-transform : uppercase;
+  font-weight: 100;
 }
 
 /* MATERIAL ICONS */
