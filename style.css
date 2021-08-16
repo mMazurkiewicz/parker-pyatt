@@ -17,7 +17,6 @@
   font-family: "CenturyGothic";
   src: url("/assets/CenturyGothic-Bold.woff2") format("woff2");
 }
-/* gothicbo.ttf - opisy */
 
 html, body {
   margin: 0;
@@ -35,6 +34,7 @@ body {
 
 .bold-font {
   font-family: 'SansSerif-BlbFLF', Arial, Helvetica, sans-serif;
+  font-weight: 100;
 }
 
 @media only screen 
@@ -85,11 +85,9 @@ ul {
   position: absolute;
   background-color: var(--FontDark);
   top: 0;
-  /* right: 800px; */
   right: -10px;
   opacity: 0;
   bottom: 0;
-  /* transform: skew(-10deg); */
   width: 150%;
   z-index: -1;
   transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1);
@@ -108,7 +106,6 @@ ul {
 
 @media (hover: hover) and (pointer: fine) {
   .animate-nav:hover::before{
-    /* right: -10px; */
     opacity: 1;
   }
 }
@@ -289,10 +286,9 @@ nav {
   content: '';
   position: absolute;
   background-color: var(--FontDark);
-  top: 0;
+  top: -1px;
   right: 0;
   bottom: 0;
-  /* transform: skew(-10deg); */
   width: 250%;
   z-index: -1;
 }
@@ -437,7 +433,6 @@ nav {
   width: 100%;
   word-wrap: break-word;
   margin: 0;
-  /* padding-left: 10vh; */
 }
 
 #workshop h2.sticky {
@@ -531,6 +526,7 @@ div.expandalbe div.accordion p {
 
 #contact .table div.row {
   border-color: var(--BorderContact);
+  flex-wrap: inherit;
 }
 
 #contact .info i {
