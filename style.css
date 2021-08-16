@@ -561,6 +561,11 @@ div.expandalbe div.accordion p {
     }
 }
 
+.reverse {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
 /* FOOTER */
 .footer {
   width: 100%;
