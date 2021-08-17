@@ -126,7 +126,7 @@ ul {
 .animate-link::before{
   content: '';
   position: absolute;
-  bottom: -2px;
+  bottom: -5px;
   right: 0;
   width: 0;
   height: 2px;
@@ -135,7 +135,7 @@ ul {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .animate-link:hover::before{
+  .animate-link:hover::before {
     left: 0;
     right: auto;
     width: 100%;
@@ -444,9 +444,12 @@ nav {
   border-bottom: 1px solid var(--Border);
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding: 30px 0;
+}
+
+#workshop .table .row {
+  flex-wrap: wrap;
 }
 
 .table .row:first-child {
@@ -528,13 +531,11 @@ div.expandalbe div.accordion p {
   flex-wrap: inherit;
 }
 
-#contact .info i {
-  transform: rotate(0deg);
-  transition: all 0.2s ease-in-out;
-}
-
-#contact .info:hover i {
-  transform: rotate(45deg);
+#contact .table div.row a{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 
 #contact .row .title {
