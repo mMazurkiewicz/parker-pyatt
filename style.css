@@ -135,7 +135,7 @@ ul {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .animate-link:hover::before {
+  a.row:hover .animate-link::before {
     left: 0;
     right: auto;
     width: 100%;
