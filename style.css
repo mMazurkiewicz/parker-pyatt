@@ -14,14 +14,19 @@
 }
 
 @font-face {
-  font-family: "CenturyGothic";
+  font-family: "CenturyGothic-Bold";
   src: url("/assets/CenturyGothic-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "CenturyGothic";
+  src: url("/assets/CenturyGothic.woff2") format("woff2");
 }
 
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'CenturyGothic', Arial, Helvetica, sans-serif;
+  font-family: 'CenturyGothic-Bold', Arial, Helvetica, sans-serif;
   color: var(--FontDark);
   background-color: var(--Primary);
   font-size: 24px;
@@ -136,6 +141,12 @@ ul {
 
 @media (hover: hover) and (pointer: fine) {
   a.row:hover .animate-link::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+  
+  .animate-link:hover::before {
     left: 0;
     right: auto;
     width: 100%;
@@ -568,10 +579,64 @@ div.expandalbe div.accordion p {
   text-align: center;
   position: relative;
   bottom: 0;
+  font-size: 18px;
   background-color: var(--OneBitAqua);
 }
 
 .footer p {
   margin: 0;
   padding-bottom: 20px;
+}
+
+.footer p span{
+  cursor: pointer;
+}
+
+/* privacy policy */
+#privacy-policy {
+  width: 100%;
+  min-height: 100%;
+  font-size: 12px;
+  font-family: 'CenturyGothic', Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  left: 3000px;
+  background-color: var(--Primary);
+  z-index: 999;
+  transition: all 0.4s ease-in-out;
+}
+
+#privacy-policy::-webkit-scrollbar {
+  display: none;
+}
+
+#privacy-policy p {
+  max-width: 100%;
+  padding: 10px;
+}
+
+#privacy-policy p b {
+  font-family: 'CenturyGothic-Bold', Arial, Helvetica, sans-serif;
+}
+
+#privacy-policy .close-icon {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 10px;
+  left: 100%;
+  padding-right: 10px;
+}
+
+#privacy-policy .underline {
+  border-bottom: 1px solid var(--FontDark);
+}
+
+#privacy-policy h3 {
+  text-align: center;
+  padding: 10px;
+  font-family: 'CenturyGothic-Bold', Arial, Helvetica, sans-serif;
 }

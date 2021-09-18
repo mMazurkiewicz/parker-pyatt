@@ -17,7 +17,19 @@ window.addEventListener('DOMContentLoaded', (event) => {
     if (accordion.style.maxHeight) {
       accordion.style.maxHeight = null;
     } else {
-      accordion.style.maxHeight = accordion.scrollHeight + "px";;
+      accordion.style.maxHeight = accordion.scrollHeight + "px";
     }
+  })
+
+  const privacyButton = document.getElementById("privacyButton");
+  const privacySection = document.getElementById("privacy-policy");
+  const closeButton = document.getElementById("closeBtn");
+  
+  privacyButton.addEventListener('click', e => {
+    privacySection.style.left = 0;
+  })
+  
+  closeButton.addEventListener('click', e => {
+    privacySection.style.left = "3000px";
   })
 })
