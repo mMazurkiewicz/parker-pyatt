@@ -583,6 +583,14 @@ div.expandalbe div.accordion p {
   background-color: var(--OneBitAqua);
 }
 
+@media only screen 
+  and (max-device-width : 540px) 
+  and (orientation : portrait) {
+    .footer {
+      font-size: 14px;
+    }
+}
+
 .footer p {
   margin: 0;
   padding-bottom: 20px;
